@@ -1,8 +1,10 @@
 from flask import Flask, request
+from flask_cors import CORS
 import pandas
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 #assign constants to json and csv file
 FILEPATH = 'top10.csv'
