@@ -56,11 +56,11 @@ def clear_table():
     scoreboard.drop(scoreboard.index,inplace=True)
     scoreboard.to_csv(FILEPATH,index=False)   
 
-#input to delete scoreboard
-admin = input("Type 'delete' to delete Leaderboard (Case-Sensitive): ")
-#only terminates once delete is typed into the terminal
-while admin.lower() != 'delete':
-    admin = input("Type 'delete' to delete Leaderboard (Case-Sensitive): ")
+# #input to delete scoreboard
+# admin = input("Type 'delete' to delete Leaderboard (Case-Sensitive): ")
+# #only terminates once delete is typed into the terminal
+# while admin.lower() != 'delete':
+#     admin = input("Type 'delete' to delete Leaderboard (Case-Sensitive): ")
 
-clear_table()
-print("Leaderboard Deleted.")
+# clear_table()
+# print("Leaderboard Deleted.")
